@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@theme {
+  --color-obsidian: #FCF8F5;     /* Primary background: Warm Cream-Ivory */
+  --color-walnut: #E9D8CA;       /* Secondary background: Rich Light Sand-Brown */
+  --color-gold: #C5A059;         /* Accent: Premium Muted Gold */
+  --color-palegold: #B38F46;     /* Hover accent: Warm Deep Gold */
+  --color-champagne: #2A1F14;    /* Text: Deep Walnut-Espresso */
+  --color-ivory: #FCF8F5;        /* Light Accent: Constant light cream for overlays */
+  --color-slate: #F6EAE1;        /* Card background: Soft Blush Rose-Linen */
+  
+  --font-display: var(--font-corinthia), cursive;
+  --font-serif: var(--font-playfair), serif;
+  --font-sans: var(--font-inter), sans-serif;
+}
+
+:root {
+  --color-obsidian: #FCF8F5;
+  --color-walnut: #E9D8CA;
+  --color-gold: #C5A059;
+  --color-palegold: #B38F46;
+  --color-champagne: #2A1F14;
+  --color-ivory: #FCF8F5;
+  --color-slate: #F6EAE1;
+}
+
+/* Lenis Scroll Settings */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Base Styles */
+body {
+  background-color: var(--color-obsidian);
+  color: var(--color-champagne);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Premium soft vignette overlay for Next/Image */
+.vignette-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(42, 31, 20, 0) 40%, rgba(42, 31, 20, 0.22) 100%);
+  pointer-events: none;
+}
+
+/* Ghost button gold sweep animation styles */
+.btn-ghost-sweep {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-gold);
+  color: var(--color-champagne);
+  background: transparent;
+  overflow: hidden;
+  transition: border-color 0.4s ease;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-ghost-sweep.btn-light {
+  color: var(--color-ivory);
+}
+
+.btn-ghost-sweep-overlay {
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(90deg, var(--color-gold) 0%, var(--color-palegold) 100%);
+  color: var(--color-obsidian);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.btn-ghost-sweep:hover .btn-ghost-sweep-overlay {
+  clip-path: inset(0 0 0 0);
+}
+
+.btn-ghost-sweep:focus-visible,
+.btn-filled:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 1px solid var(--color-gold);
+  outline-offset: 1px;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.25);
+}
+
+/* Gold diamond background for mobile menu */
+.gold-diamond-pattern {
+  background-image: radial-gradient(var(--color-gold) 1px, transparent 0);
+  background-size: 24px 24px;
+}
