@@ -114,8 +114,9 @@ export default function AboutSnippet() {
 
   return (
     <section
+      id="about"
       ref={containerRef}
-      className="py-20 md:py-32 bg-slate text-champagne"
+      className="py-20 md:py-32 bg-slate text-champagne scroll-mt-24"
       aria-label="About our estate"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
@@ -132,8 +133,8 @@ export default function AboutSnippet() {
             }}
           >
             <Image
-              src="/images/about-ceremony.png"
-              alt="Luxury wedding ceremony couple"
+              src="/images/venue-glasshouse.png"
+              alt="Modern glass house sanctuary"
               fill
               sizes="(max-width: 768px) 50vw, 30vw"
               className="object-cover"
@@ -150,8 +151,8 @@ export default function AboutSnippet() {
             }}
           >
             <Image
-              src="/images/about-detail.png"
-              alt="Opulent table setting details"
+              src="/images/venue-lounge.png"
+              alt="Sophisticated champagne lounge"
               fill
               sizes="(max-width: 768px) 50vw, 30vw"
               className="object-cover"
@@ -166,56 +167,40 @@ export default function AboutSnippet() {
           </span>
           
           <AnimatedText
-            text="Crafting Unforgettable Eras of Celebration"
+            text="A Blank Canvas for Unforgettable Memories"
             tag="h2"
             className="font-serif text-3xl md:text-5xl font-medium tracking-wide text-champagne leading-tight"
           />
 
           <p className="text-sm text-champagne/70 leading-relaxed font-sans max-w-xl">
-            Grandeur Hall is more than a venue; it is an architectural symphony custom-designed to host life’s most profound milestones. Built upon fifteen years of award-winning hospitality, our estate seamlessly blends classical grandeur with cutting-edge design.
+            At Grandeur Hall, we believe a great celebration is an art form. Our 20-acre estate is designed as a private sanctuary where your dreams are translated into reality, combining classical architectural triumphs with nature's tranquil beauty.
           </p>
           
           <p className="text-sm text-champagne/70 leading-relaxed font-sans max-w-xl">
-            From our soaring glass house reflecting woodland silhouettes to the sweeping ballroom with crystal chandeliers, every corner is a canvas for cinematic memories. We curate bespoke experiences, ensuring your celebration resonates with absolute luxury.
+            Whether you choose the soaring glass pavilion reflecting whispering woodland silhouettes or the intimate, velvet-draped champagne lounge, we ensure your event carries a unique, cinematic character that resonates with your personal story.
           </p>
 
-          <p className="text-sm text-champagne/70 leading-relaxed font-sans max-w-xl">
-            We believe that a legendary event requires perfect alignment of sensory details. Our estate director leads an elite team of designers who create custom floral structures tailored to your theme, while our culinary curators craft personalized menus that elevate fine dining into an interactive, theatrical experience.
-          </p>
-
-          {/* Core Highlights List */}
-          <div className="grid grid-cols-2 gap-4 w-full pt-2 max-w-xl">
-            <div className="flex items-start gap-2">
-              <span className="text-gold font-serif text-sm mt-0.5">✦</span>
-              <div>
-                <h4 className="font-sans text-xs uppercase tracking-wider text-champagne font-semibold">Couture Scenography</h4>
-                <p className="font-sans text-[10px] text-champagne/60 leading-normal">Bespoke themed styling and floral sets.</p>
-              </div>
+          {/* Core Highlights List - minimal and punchy */}
+          <div className="grid grid-cols-2 gap-y-6 gap-x-8 w-full pt-4 max-w-xl">
+            <div className="flex items-center gap-3 border-b border-walnut/15 pb-2">
+              <span className="text-gold font-serif text-base">✦</span>
+              <span className="font-sans text-xs uppercase tracking-[0.15em] text-champagne font-semibold">Couture Scenography</span>
             </div>
-            <div className="flex items-start gap-2">
-              <span className="text-gold font-serif text-sm mt-0.5">✦</span>
-              <div>
-                <h4 className="font-sans text-xs uppercase tracking-wider text-champagne font-semibold">Michelin-Inspired Culinary</h4>
-                <p className="font-sans text-[10px] text-champagne/60 leading-normal">Custom menus crafted by elite chefs.</p>
-              </div>
+            <div className="flex items-center gap-3 border-b border-walnut/15 pb-2">
+              <span className="text-gold font-serif text-base">✦</span>
+              <span className="font-sans text-xs uppercase tracking-[0.15em] text-champagne font-semibold">Michelin Culinary</span>
             </div>
-            <div className="flex items-start gap-2">
-              <span className="text-gold font-serif text-sm mt-0.5">✦</span>
-              <div>
-                <h4 className="font-sans text-xs uppercase tracking-wider text-champagne font-semibold">White-Glove Valet & Butler</h4>
-                <p className="font-sans text-[10px] text-champagne/60 leading-normal">Pristine assistance for hosts and VIPs.</p>
-              </div>
+            <div className="flex items-center gap-3 border-b border-walnut/15 pb-2">
+              <span className="text-gold font-serif text-base">✦</span>
+              <span className="font-sans text-xs uppercase tracking-[0.15em] text-champagne font-semibold">White-Glove Butler</span>
             </div>
-            <div className="flex items-start gap-2">
-              <span className="text-gold font-serif text-sm mt-0.5">✦</span>
-              <div>
-                <h4 className="font-sans text-xs uppercase tracking-wider text-champagne font-semibold">Advanced Technical FX</h4>
-                <p className="font-sans text-[10px] text-champagne/60 leading-normal">Complete 3D mapping and acoustics.</p>
-              </div>
+            <div className="flex items-center gap-3 border-b border-walnut/15 pb-2">
+              <span className="text-gold font-serif text-base">✦</span>
+              <span className="font-sans text-xs uppercase tracking-[0.15em] text-champagne font-semibold">Technical FX</span>
             </div>
           </div>
 
-          <div className="pt-6">
+          <div className="pt-8">
             <Link href="/venues" className="btn-ghost-sweep px-6 py-3 text-xs tracking-widest">
               <span>Explore Our Spaces</span>
               <span className="btn-ghost-sweep-overlay">Explore Our Spaces</span>

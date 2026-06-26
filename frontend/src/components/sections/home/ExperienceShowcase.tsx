@@ -17,7 +17,7 @@ const EXPERIENCES = [
   {
     title: 'Royal Weddings',
     subtitle: 'Where Love Becomes Legend',
-    desc: 'Step into a fairy tale designed exclusively for you. From majestic traditional walkthroughs and pre-wedding ceremonies to contemporary glass-house receptions, we weave romance, couture floral architecture, and fine dining into timeless memories. Our planners curate every second of your timeline with impeccable precision.',
+    desc: 'A fairy-tale celebration curated to your legacy. We weave couture floral scenography and Michelin-caliber banquets into timeless memories.',
     image: '/images/gallery-3.jpg',
     features: [
       'Personal Bridal Concierge & Butler',
@@ -31,7 +31,7 @@ const EXPERIENCES = [
   {
     title: 'Corporate Galas & Summits',
     subtitle: 'Elevate Your Corporate Narrative',
-    desc: 'Establish your brand\'s distinction with sophisticated galas, international summits, and high-end award nights. Our venues feature advanced acoustical design, multi-dimensional laser mapping, and custom menus tailored to your corporate identity, ensuring your partners experience absolute excellence.',
+    desc: 'Establish your brand distinction. Elegant award ceremonies and executive summits supported by state-of-the-art visual FX and acoustics.',
     image: '/images/gallery-11.jpg',
     features: [
       '3D Projection Mapping & Laser FX',
@@ -45,7 +45,7 @@ const EXPERIENCES = [
   {
     title: 'Milestone Soirees',
     subtitle: 'Artfully Crafted Celebrations',
-    desc: 'Celebrate life\'s exceptional moments in intimate luxury. Whether hosting a grand birthday banquet, a golden anniversary, or a champagne reception under the twilight canopy, our dedicated guest relations team ensures your hospitality is carried with effortless, memorable grace.',
+    desc: 'Celebrate life\'s grand chapters. Host sophisticated anniversaries, birthday banquets, and champagne receptions under starlit canopies.',
     image: '/images/gallery-15.jpg',
     features: [
       'Curated Mixology Bars & Sommeliers',

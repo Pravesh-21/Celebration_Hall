@@ -5,7 +5,9 @@ import AboutSnippet from '@/components/sections/home/AboutSnippet';
 import GoldDivider from '@/components/ui/GoldDivider';
 import FeaturedVenues from '@/components/sections/home/FeaturedVenues';
 import ExperienceShowcase from '@/components/sections/home/ExperienceShowcase';
+import VisualPillars from '@/components/sections/home/VisualPillars';
 import WhyChooseUs from '@/components/sections/home/WhyChooseUs';
+import PlanningJourney from '@/components/sections/home/PlanningJourney';
 import FaqAccordion from '@/components/sections/home/FaqAccordion';
 import CTABand from '@/components/sections/home/CTABand';
 import Footer from '@/components/shared/Footer';
@@ -61,9 +63,15 @@ export default function Home() {
       
       {/* Experience Showcase (Weddings, Corporate, Milestone Soirees) */}
       <ExperienceShowcase />
+
+      {/* Visual Pillars (Scenic Highlights of the Estate) */}
+      <VisualPillars />
       
       {/* Why Choose Us */}
       <WhyChooseUs />
+
+      {/* Planning Journey (Process Steps) */}
+      <PlanningJourney />
 
       {/* Frequently Asked Questions Accordion */}
       <FaqAccordion />

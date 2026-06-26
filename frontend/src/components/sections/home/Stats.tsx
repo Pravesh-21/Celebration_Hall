@@ -88,61 +88,49 @@ export default function Stats() {
   return (
     <section
       ref={containerRef}
-      className="bg-walnut/20 border-t border-b border-walnut/30 py-12 md:py-20"
+      className="bg-walnut/20 border-t border-b border-walnut/30 py-10 md:py-16"
       aria-label="Key highlights"
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6 text-center items-stretch divide-y sm:divide-y-0 sm:divide-x divide-walnut/30">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-2 lg:grid-cols-4 gap-y-10 lg:gap-y-0 text-center items-center divide-x divide-walnut/30">
         
         {/* Stat 1 */}
-        <div className="flex flex-col items-center justify-center p-4 sm:p-2">
-          <span ref={val1Ref} className="font-serif text-4xl md:text-5xl lg:text-6xl text-gold font-medium leading-none mb-2">
+        <div className="flex flex-col space-y-2">
+          <span ref={val1Ref} className="font-serif text-3xl sm:text-4xl md:text-6xl text-gold font-medium leading-none">
             0+
           </span>
-          <span className="font-sans text-[10px] sm:text-xs uppercase tracking-[0.15em] text-champagne font-semibold mb-2">
+          <span className="font-sans text-[10px] sm:text-xs uppercase tracking-[0.2em] text-champagne font-semibold">
             Grand Events
           </span>
-          <p className="font-sans text-[11px] text-champagne/60 leading-relaxed max-w-[200px]">
-            Unforgettable royal weddings and corporate galas successfully hosted on our grounds.
-          </p>
         </div>
 
         {/* Stat 2 */}
-        <div className="flex flex-col items-center justify-center p-4 sm:p-2 pt-6 sm:pt-2">
-          <span ref={val2Ref} className="font-serif text-4xl md:text-5xl lg:text-6xl text-gold font-medium leading-none mb-2">
+        <div className="flex flex-col space-y-2">
+          <span ref={val2Ref} className="font-serif text-3xl sm:text-4xl md:text-6xl text-gold font-medium leading-none">
             0
           </span>
-          <span className="font-sans text-[10px] sm:text-xs uppercase tracking-[0.15em] text-champagne font-semibold mb-2">
+          <span className="font-sans text-[10px] sm:text-xs uppercase tracking-[0.2em] text-champagne font-semibold">
             Years of Legacy
           </span>
-          <p className="font-sans text-[11px] text-champagne/60 leading-relaxed max-w-[200px]">
-            Delivering award-winning luxury hospitality, premium planning, and architectural majesty.
-          </p>
         </div>
 
         {/* Stat 3 */}
-        <div className="flex flex-col items-center justify-center p-4 sm:p-2 pt-6 sm:pt-2">
-          <span ref={val3Ref} className="font-serif text-4xl md:text-5xl lg:text-6xl text-gold font-medium leading-none mb-2">
+        <div className="flex flex-col space-y-2">
+          <span ref={val3Ref} className="font-serif text-3xl sm:text-4xl md:text-6xl text-gold font-medium leading-none">
             0★
           </span>
-          <span className="font-sans text-[10px] sm:text-xs uppercase tracking-[0.15em] text-champagne font-semibold mb-2">
+          <span className="font-sans text-[10px] sm:text-xs uppercase tracking-[0.2em] text-champagne font-semibold">
             Guest Rating
           </span>
-          <p className="font-sans text-[11px] text-champagne/60 leading-relaxed max-w-[200px]">
-            Consistently reviewed by discerning patrons for pristine, white-glove butler services.
-          </p>
         </div>
 
         {/* Stat 4 */}
-        <div className="flex flex-col items-center justify-center p-4 sm:p-2 pt-6 sm:pt-2">
-          <span ref={val4Ref} className="font-serif text-4xl md:text-5xl lg:text-6xl text-gold font-medium leading-none mb-2">
+        <div className="flex flex-col space-y-2">
+          <span ref={val4Ref} className="font-serif text-3xl sm:text-4xl md:text-6xl text-gold font-medium leading-none">
             0+
           </span>
-          <span className="font-sans text-[10px] sm:text-xs uppercase tracking-[0.15em] text-champagne font-semibold mb-2">
-            Spacious Capacity
+          <span className="font-sans text-[10px] sm:text-xs uppercase tracking-[0.2em] text-champagne font-semibold">
+            Guest Capacity
           </span>
-          <p className="font-sans text-[11px] text-champagne/60 leading-relaxed max-w-[200px]">
-            Versatile estate layouts configured comfortably to host up to 1,200 esteemed guests.
-          </p>
         </div>
 
       </div>

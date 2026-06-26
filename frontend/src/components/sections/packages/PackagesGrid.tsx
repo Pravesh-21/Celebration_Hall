@@ -14,7 +14,11 @@ if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
 }
 
-export default function PackagesGrid() {
+interface PackagesGridProps {
+  onBookNow: (packageId: string) => void;
+}
+
+export default function PackagesGrid({ onBookNow }: PackagesGridProps) {
   const gridRef = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
@@ -121,23 +125,23 @@ export default function PackagesGrid() {
 
             {/* Card Action Button */}
             <div className="pt-8">
-              <Link
-                href="/contact"
-                className={`w-full py-3 text-xs tracking-widest text-center block font-sans uppercase font-medium transition-colors duration-300 ${
+              <button
+                onClick={() => onBookNow(pkg.id)}
+                className={`w-full py-3 text-xs tracking-widest text-center block font-sans uppercase font-medium cursor-pointer transition-colors duration-300 ${
                   isSignature
                     ? 'bg-gold text-obsidian hover:bg-palegold'
                     : 'btn-ghost-sweep'
                 }`}
               >
                 {isSignature ? (
-                  <span>Enquire Now</span>
+                  <span>Book Now</span>
                 ) : (
                   <>
-                    <span>Enquire</span>
-                    <span className="btn-ghost-sweep-overlay">Enquire</span>
+                    <span>Book Now</span>
+                    <span className="btn-ghost-sweep-overlay">Book Now</span>
                   </>
                 )}
-              </Link>
+              </button>
             </div>
           </div>
         );

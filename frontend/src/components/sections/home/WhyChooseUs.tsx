@@ -16,32 +16,32 @@ const PILLARS = [
   {
     icon: Sparkles,
     title: 'Bespoke Scenography',
-    desc: 'Bespoke themed styling, curated color palettes, and custom structural floral installations designed individually for your theme by our in-house master decorators.'
+    desc: 'Custom styling, curated palettes, and structural floral sets designed by master decorators.'
   },
   {
     icon: Utensils,
     title: 'Gastronomic Artistry',
-    desc: 'Curated global dining experiences designed by top-tier culinary chefs, featuring personalized multi-course menus, interactive live counters, and exquisite plated service.'
+    desc: 'Chef-designed dining options, interactive live counters, and bespoke plated banquets.'
   },
   {
     icon: ConciergeBell,
     title: 'White-Glove Service',
-    desc: 'Dedicated personal bridal concierges, professional event coordinators, and estate butler teams managing every detail with absolute, quiet precision.'
+    desc: 'Personal bridal concierges and estate butler teams managing every operational second.'
   },
   {
     icon: Crown,
     title: 'Cinematic Architecture',
-    desc: 'Soaring 20ft glass walls, grand crystal ceilings, double marble staircases, and lush woodland backdrops designed for majestic, high-fidelity visuals.'
+    desc: 'Soaring glass walls, crystal ceilings, and lush woodland backdrops for rich visuals.'
   },
   {
     icon: Volume2,
     title: 'Acoustics & Visual FX',
-    desc: 'Equipped with state-of-the-art 3D projection mapping, synchronized intelligent lighting rigs, and professional acoustic calibration for immersive soundscapes.'
+    desc: 'Intelligent lighting rigs, 3D projection mapping, and professional acoustic tuning.'
   },
   {
     icon: Bed,
     title: 'Imperial Guest Suites',
-    desc: 'Luxurious on-site bridal sanctuaries and guest dressing villas complete with private powder rooms, refreshment bars, and dedicated host butler services.'
+    desc: 'Sanctuary dressing villas equipped with refreshment bars and private butler care.'
   }
 ];
 

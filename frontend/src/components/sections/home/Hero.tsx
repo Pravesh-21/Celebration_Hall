@@ -52,18 +52,6 @@ export default function Hero() {
           { y: 0, opacity: 1, duration: 1.2, stagger: 0.15, ease: 'power3.out' }
         );
 
-        // Gentle floating loop for the text content
-        gsap.fromTo(contentRef.current,
-          { y: 0 },
-          {
-            y: 8,
-            duration: 3.5,
-            repeat: -1,
-            yoyo: true,
-            ease: 'power1.inOut',
-            delay: 1.5,
-          }
-        );
 
         // Scroll cue bounce loop (yoyo)
         gsap.fromTo(
@@ -127,13 +115,8 @@ export default function Hero() {
         <div className="w-20 h-[1px] bg-gold mb-6" />
 
         {/* Subtitle */}
-        <p className="font-sans text-xs sm:text-sm md:text-base uppercase tracking-[0.2em] text-gold font-medium mb-4">
+        <p className="font-sans text-xs sm:text-sm md:text-base uppercase tracking-[0.25em] text-gold font-medium mb-12">
           Luxury Celebrations. Timeless Memories.
-        </p>
-
-        {/* Detailed Hero Description */}
-        <p className="font-sans text-xs sm:text-sm text-ivory/75 max-w-2xl mb-10 leading-relaxed text-center">
-          Our majestic 20-acre estate combines classical European architecture with modern glasshouse design to create Nagpur's most prestigious venue for royal weddings, grand corporate galas, and bespoke milestone celebrations. Every detail is curated to offer an Awwwards-caliber experience, from couture floral scenography to Michelin-inspired dining.
         </p>
 
         {/* CTAs */}

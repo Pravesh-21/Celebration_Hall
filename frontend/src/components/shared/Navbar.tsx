@@ -8,8 +8,10 @@ import { Menu, X } from 'lucide-react';
 
 const NAV_LINKS = [
   { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
   { href: '/venues', label: 'Venues' },
   { href: '/packages', label: 'Packages' },
+  { href: '/gastronomy', label: 'Gastronomy' },
   { href: '/gallery', label: 'Gallery' },
   { href: '/contact', label: 'Contact' },
 ];
@@ -21,8 +23,8 @@ export default function Navbar() {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const lastScrollY = useRef(0);
 
-  const isHome = pathname === '/';
-  const isDarkNavbar = isHome && !isScrolled;
+  const hasDarkHero = pathname === '/' || pathname === '/about' || pathname === '/gastronomy';
+  const isDarkNavbar = hasDarkHero && !isScrolled;
 
   useEffect(() => {
     const handleScroll = () => {

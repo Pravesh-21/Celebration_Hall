@@ -59,13 +59,8 @@ export default function CTABand() {
         <AnimatedText
           text="Let's Create an Unforgettable Legacy"
           tag="h2"
-          className="font-serif text-3xl sm:text-4xl md:text-5xl font-medium tracking-wide text-champagne mb-6 leading-tight"
+          className="font-serif text-3xl sm:text-4xl md:text-5xl font-medium tracking-wide text-champagne mb-12 leading-tight"
         />
-
-        {/* Rich CTA Paragraph */}
-        <p className="font-sans text-xs sm:text-sm text-champagne/70 leading-relaxed max-w-2xl mb-10 text-center">
-          Whether you are planning an intimate twilight wedding under our ancient walnut trees or a grand crystal-chandelier banquet for a thousand esteemed guests, our estate planners are prepared to translate your vision into a flawless legacy. Contact us today to schedule your private tour of the grounds.
-        </p>
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
