@@ -1,25 +1,18 @@
-import type { NextConfig } from 'next';
+/** @type {import('next').NextConfig} */
 
 const securityHeaders = [
-  // Prevent MIME type sniffing
   { key: 'X-Content-Type-Options', value: 'nosniff' },
-  // Block site from being framed (clickjacking protection)
   { key: 'X-Frame-Options', value: 'DENY' },
-  // Enable XSS filter in older browsers
   { key: 'X-XSS-Protection', value: '1; mode=block' },
-  // Referrer policy — don't leak URL to third parties
   { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
-  // Permissions Policy — disable unused browser features
   {
     key: 'Permissions-Policy',
     value: 'camera=(), microphone=(), geolocation=(), payment=()',
   },
-  // Strict Transport Security — force HTTPS (1 year)
   {
     key: 'Strict-Transport-Security',
     value: 'max-age=31536000; includeSubDomains; preload',
   },
-  // Content Security Policy
   {
     key: 'Content-Security-Policy',
     value: [
@@ -34,7 +27,7 @@ const securityHeaders = [
   },
 ];
 
-const nextConfig: NextConfig = {
+const nextConfig = {
   async headers() {
     return [
       {
@@ -43,8 +36,7 @@ const nextConfig: NextConfig = {
       },
     ];
   },
-  // Disable x-powered-by header
   poweredByHeader: false,
 };
 
-export default nextConfig;
+module.exports = nextConfig;

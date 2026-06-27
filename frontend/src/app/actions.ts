@@ -30,8 +30,9 @@ export async function submitBooking(data: unknown): Promise<SubmissionResult> {
   const validatedData = result.data;
 
   // Try to sync with the Express backend if it is running
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5001';
   try {
-    const response = await fetch('http://localhost:5001/api/bookings', {
+    const response = await fetch(`${API_URL}/api/bookings`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
